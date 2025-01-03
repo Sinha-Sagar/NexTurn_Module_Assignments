@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #94caf7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #5a4f4f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #c1b8b8;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+#addTaskButton {
+    padding: 10px 20px;
+    border: none;
+    background: #407de0;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+#addTaskButton:hover {
+    background: #218838;
+}
+
+#taskList {
+    color: #ddd;
+    font-weight: bold;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.task.completed {
+    text-decoration: line-through;
+    color: #aaa;
+    background-color: #f8f9fa;
+}
+
+.task-actions button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-actions .edit {
+    background: #ffc107;
+    color: #fff;
+}
+
+.task-actions .delete {
+    background: #dc3545;
+    color: #fff;
+}
+
+.task-actions .edit:hover {
+    background: #e0a800;
+}
+
+.task-actions .delete:hover {
+    background: #c82333;
+}
+
+.task-counter {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #ddd;
+    font-weight: bold;
+}
